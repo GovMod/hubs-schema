@@ -8,7 +8,7 @@ version: "20190304"
 
 # URL of Logo Icon used on Application Information tab. Logo must be 130x130 pixels.
 # (Optional)
-logoUrl: https://standardmagic.com/images/logo-light.svg
+logoUrl: https://github.com/GovMod/hubs-schema/blob/main/StandardMagic.png
 
 # Used in Application Information tab to Hyperlink Title and Logo to the Marketplace
 # Listing.
