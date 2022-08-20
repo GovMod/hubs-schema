@@ -1,6 +1,7 @@
 # Title shown in Application Information tab.
 title: Mozilla Hubs Oracle Cloud Launcher
 # Sub Title shown in Application Information tab.
+name: Deploy-Hubs
 description: Create and launch Hubs environments on Oracle Cloud
 informationalText: Create Mozilla Hubs Environment
 schemaVersion: 1.1.0
