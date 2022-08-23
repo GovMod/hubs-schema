@@ -109,22 +109,7 @@ variableGroups:
   restrictSiteAccess:
     type: boolean
 
-  keyPair: 
-    type: file
 
-  numberOfAppServers:
-    type: number
-
-  numberOfStreamingServers:
-    type: number
-
-  appServerInstanceType:
-    type: array
-    default: "BigServer"
-
-  streamingServerInstanceType:
-    type: array
-    default: "BigServer"
 
 # Used to present outputs with more refinement on the Application Information tab.
 # The Application Information tab is only shown if the schema has a "title",
