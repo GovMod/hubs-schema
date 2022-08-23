@@ -38,7 +38,7 @@ variableGroups:
 
   adminEmail:
     type: email
-    title: Administration Email Address
+    title: "Administration Email Address"
     descriptin: "Email address for you administration account." 
     required: true
 
