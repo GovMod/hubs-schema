@@ -34,14 +34,14 @@ variableGroups:
       - ${password}
       - ${dnsServers}
 
-Administration Email Address	
+	variables:
+  
   adminEmail:
     type: oci:core:servicegateway:id
     title: Administration Email Address
     descriptin: Email address for you administration account.  Individuals with access to this email address will have full administrative control of your hub.  Before you can log in, you will need to verify this email address - you will get a verification email from Oracle after the stack is ready.
-    dependsOn:
-      compartmentId: ${vcnCompartment}
-      vcnId: ${myVcn}
+
+
 # Used to present outputs with more refinement on the Application Information tab.
 # The Application Information tab is only shown if the schema has a "title",
 # "description", and at least one output in this "outputs" section.
