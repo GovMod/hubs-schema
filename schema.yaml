@@ -28,6 +28,11 @@ variableGroups:
   - title: "Application Details"
     variables:
       - ${adminEmail}
+  - title: "Domain Configuration"
+    variables:
+      - ${domainName}
+      - ${ociHostedDomain}
+      - ${internalDomainName}
 
 	variables:
     # compartmentId dynamic dropdown, targetCompartment present in input variables
@@ -35,12 +40,32 @@ variableGroups:
     type: oci:identity:compartment:id
     title: "Target Compartment"
     description: "Select an available compartment.  Assets can be moved to other compartments after creation."
+    required: true
 
   adminEmail:
     type: string
     title: "Administration Email Address"
     description: "Email address for you administration account.  Individuals with access to this email address will have full administrative control of your hub.  Before you can log in, you will need to verify this email address - you will get a verification email from Oracle after the stack is ready." 
     required: true
+
+  domainName:
+    type: string
+    title: "Domain Name"	
+    description: "Domain name your hubs will be hosted Oracle. (eg myhub.com or hub.mydomain.com.) This should be a domain you already own, either on a third party provider (eg GoDaddy or Namecheap) or OCI DNS."
+    required: true
+
+  ociHostedDomain:
+    type: boolean
+    title: "Is your domain setup on Oracle DNS?"
+    description: "Additional setup required for non-Oracle hosted domains."
+    required: true
+
+  internalDomainName:
+    type: string
+    title: "Internal domain name"
+    description: "Your hub needs a domain name to use internally for server management.  If you primary domain is on Oracle DNS and you're not using it for anything else, you can choose it here.  Otherwise you'll need to register a new domainname on OCI DNS for this (for example, myhub-internal.com). This domainname will not be seen by users."
+    required: true
+
 
 # Used to present outputs with more refinement on the Application Information tab.
 # The Application Information tab is only shown if the schema has a "title",
