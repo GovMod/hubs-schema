@@ -165,7 +165,8 @@ variableGroups:
   - title: "Resource Manager Section"
     variables:
       - ${private_endpoint_ocid}
-
+      
+#################################################################################################################################
 variables:
   # string field
   username:
