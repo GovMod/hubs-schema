@@ -53,6 +53,11 @@ variableGroups:
     variables:
       - ${stackMode}
       - ${offlineRedirectURL}      
+  - title: "Database Configuration"
+    variables:
+      - ${dbAutoPause}
+      - ${dbBackupRetentionPeriod}
+      - ${dbAutoScale}
 
 
 	variables:
@@ -160,6 +165,25 @@ variableGroups:
     type: string
     title: 
     description: 
+
+  dbAutoPause:
+    type: string
+    title: 
+    description: 
+
+  dbBackupRetentionPeriod:
+    type: string
+    title: 
+    description: 
+
+  dbAutoScale:
+    type: string
+    title: 
+    description: 
+
+
+
+  
 
 # Used to present outputs with more refinement on the Application Information tab.
 # The Application Information tab is only shown if the schema has a "title",
