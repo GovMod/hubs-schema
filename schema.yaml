@@ -127,6 +127,7 @@ variableGroups:
     type: string
     title: "Restrict Site Access"
     description: "You can restrict which IP addresses can access your site. To allow anyone on the Internet to load your site, choose (Allow anyone to access my site)"
+    default: "Allow Everyone to access my site"
 
   keyPair:
     type: oci:core:ssh:publickey
