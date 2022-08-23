@@ -33,6 +33,8 @@ variableGroups:
     # compartmentId dynamic dropdown, targetCompartment present in input variables
   targetCompartment:
     type: oci:identity:compartment:id
+    title: "Target Compartment"
+    description: "Select an available compartment.  Assets can be moved to other compartments after creation."
 
   adminEmail:
     type: string
