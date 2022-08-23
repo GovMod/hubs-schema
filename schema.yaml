@@ -59,9 +59,9 @@ variableGroups:
       - ${dbBackupRetentionPeriod}
       - ${dbAutoScale}
   - title: "Restore from Backup"
+    variables: 
       - ${notImplementedYet}
-  - title: "Lets Encrypt"
-      - ${letsEncryptContactEmail}
+
 
 
 	variables:
