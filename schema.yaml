@@ -151,12 +151,12 @@ variableGroups:
     required: false
 
   appServerInstanceType:
-    type: string
+    type: oci:core:instanceshape:name
     title: "Application Server Instance Type"
     description: "The Oracle compute shape type for your app server(s). Choose a (t) instance type if you expect bursty use of the service, and the (c) types if you expect steady usage."
 
   streamingServerInstanceType:
-    type: string
+    type: oci:core:instanceshape:name
     title: "Streaming Server Instance Type"
     description: "The Oracle Shape type for your streaming server(s), if you have added any. This field will not be used if you entered zero for the number of streaming servers. Choose a (t) instance type if you expect bursty use of the service, and the (c) types if you expect steady usage."
 
