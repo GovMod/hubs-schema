@@ -128,6 +128,7 @@ variableGroups:
     title: "Restrict Site Access"
     description: "You can restrict which IP addresses can access your site. To allow anyone on the Internet to load your site, choose (Allow anyone to access my site)"
     default: "Allow Everyone to access my site"
+    enum: ["Allow Everyone to access my site", "Restrict by CIDR"]
 
   keyPair:
     type: oci:core:ssh:publickey
