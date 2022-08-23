@@ -43,6 +43,14 @@ variableGroups:
     required: true
 
 
+  myNsg:
+    type: oci:core:nsg:id
+    title: "Network Security Group"
+    description: "Network Security Group description"
+    dependsOn:
+      compartmentId: ${vcnCompartment}
+
+
 # Used to present outputs with more refinement on the Application Information tab.
 # The Application Information tab is only shown if the schema has a "title",
 # "description", and at least one output in this "outputs" section.
