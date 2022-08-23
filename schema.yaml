@@ -58,7 +58,12 @@ variableGroups:
       - ${dbAutoPause}
       - ${dbBackupRetentionPeriod}
       - ${dbAutoScale}
-
+  - title: "Restore from Backup"
+      - ${notImplementedYet}
+  - title: "Let's Encrypt"
+      - ${letsEncryptContactEmail}
+  - title: "Advanced - Leave these alone unless you know what you're doing!"
+      - ${notImplementedYet}
 
 	variables:
     # compartmentId dynamic dropdown, targetCompartment present in input variables
@@ -167,21 +172,29 @@ variableGroups:
     description: "(Optional) When your stack is set to Offline, visitors will be redirected to this URL."
 
   dbAutoPause:
-    type: string
-    title: 
-    description: 
+    type: boolean
+    title: "Auto-pause Resources" 
+    description: "Your hub uses the Aurora Serverless database, which can greatly save costs by pausing the database when your hub is not in use. However, when the database is paused, it can take up to 20 seconds for your site to come back up when you visit it. You can turn off database pausing if you'd like to avoid any delay in loading your site. Turning off pausing will incur continuous hourly database costs. Pricing info can be found at https://aws.amazon.com/rds/aurora/serverless/"
 
   dbBackupRetentionPeriod:
-    type: string
-    title: 
-    description: 
+    type: interger
+    title: "Database backup retention period (in days)"
+    description: "Number of days your database backups will be retained for."
 
   dbAutoScale:
+    type: boolean 
+    title: "Autoscale Resources"
+    description: "Allow Database and other resources to scale as needed"
+
+
+
+
+
+
+  notImplementedYet:
     type: string
-    title: 
-    description: 
-
-
+    title: "Feature Not Implemented"
+    description: "This feature is pending"
 
   
 
