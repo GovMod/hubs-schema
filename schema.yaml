@@ -67,6 +67,9 @@ variableGroups:
   - title: "Advanced - Leave these alone unless you know what you are doing!"
     variables: 
       - ${notImplementedYet}
+  - title: "Permissions"
+    variables:
+      - ${iamRole}
 
 	variables:
     # compartmentId dynamic dropdown, targetCompartment present in input variables
@@ -193,10 +196,13 @@ variableGroups:
     type: string
     title: "Let's Encrypt Contact Email Address (Optional)"
     description: "Your servers will use Let's Encrypt to automatically manage SSL certificates. To receive urgent email notifications regarding your certificates from Let's Encrypt, specify a contact email here. This field is optional. By deploying this stack you agree to the LetsEncrypt TOS. (https://letsencrypt.org/repository/)" 
-    required: true
-
-
-
+    required: false
+  
+  iamRole:
+    type: string
+    title: "IAM Role (optional) Choose the IAM role for CloudFormation to use for all operations performed on the stack."
+    description: "Choose an IAM role to explicitly define how CloudFormation can create, modify, or delete resources in the stack. If you don't choose a role, CloudFormation uses permissions based on your user credentials.Learn more "
+    required: false
 
   notImplementedYet:
     type: string
