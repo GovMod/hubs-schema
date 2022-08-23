@@ -107,11 +107,21 @@ variableGroups:
     type: file
     title: "Key Pair"
     description: "SSH Keypair for server SSH access. If there no keypairs in this list, you will need to add a SSH keypair via the Oracle console. See: https://docs.oracle.com/en-us/iaas/Content/Compute/Tasks/managingkeypairs.htm."
+    required: true 
 
   numberOfAppServers:
     type: integer
     title: "Number of Application Servers"
-    description: ""
+    description: "The number of app server(s) to run. The app servers provide all the necessary services for your hub. You must run at least one app server."
+    default: "1"
+    required: true
+
+  numberOfStreamingServers:
+    type: interger
+    title: "Number of voice/videos streaming servers"
+    description: "The number of dedicated voice/video streaming server(s) you'd like to run. These servers are optional - enter a zero here if you do not want to run any streaming servers. Adding streaming servers will take network and CPU load off of your app servers. These servers will transmit voice and streaming video data between users."
+    required: false
+
 
 # Used to present outputs with more refinement on the Application Information tab.
 # The Application Information tab is only shown if the schema has a "title",
