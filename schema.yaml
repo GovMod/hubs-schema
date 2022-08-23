@@ -41,11 +41,7 @@ variableGroups:
   - title: "Server Configuration"
     variables:
       - ${restrictSiteAccess}
-      - ${keyPair}
-      - ${numberOfAppServers}
-      - ${numberOfStreamingServers}
-      - ${appServerInstanceType}
-      - ${streamingServerInstanceType}
+
 
 
 
