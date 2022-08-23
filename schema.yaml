@@ -95,9 +95,6 @@ variableGroups:
     title: "Restrict Site Access"
     description: "You can restrict which IP addresses can access your site. To allow anyone on the Internet to load your site, choose (Allow anyone to access my site)"
 
-  restrictSiteAccess:
-    type: boolean
-
 
 
 # Used to present outputs with more refinement on the Application Information tab.
