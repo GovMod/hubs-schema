@@ -33,6 +33,7 @@ variableGroups:
       - ${domainName}
       - ${ociHostedDomain}
       - ${internalDomainName}
+      - ${shortLinkDomainName}
 
 	variables:
     # compartmentId dynamic dropdown, targetCompartment present in input variables
@@ -65,7 +66,12 @@ variableGroups:
     title: "Internal domain name"
     description: "Your hub needs a domain name to use internally for server management.  If you primary domain is on Oracle DNS and you're not using it for anything else, you can choose it here.  Otherwise you'll need to register a new domainname on OCI DNS for this (for example, myhub-internal.com). This domainname will not be seen by users."
     required: true
-
+  
+  shortLinkDomainName:
+    type: string
+    title: Short link domain name"	
+    description: "You'll need a Oracle domainname for short room permalinks, entry codes, and device linking.  (eg myhub.link)  It should *not* be the same domaina s any of the domain names that you specified above.  This domain will be used by visitors to share room links, and ideally should be short and easy to type since it will be typed by users on mobile devices and in VR."
+    required: true
 
 # Used to present outputs with more refinement on the Application Information tab.
 # The Application Information tab is only shown if the schema has a "title",
