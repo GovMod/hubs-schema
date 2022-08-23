@@ -38,7 +38,12 @@ variableGroups:
     variables:
       - ${outgoingEmailDomain}
       - ${outgoingEmailSubdomainPrefix}
+  - title: "Server Configuration"
+    variables:
+      - ${outgoingEmailDomain}
+      - ${outgoingEmailSubdomainPrefix}
 
+      
 	variables:
     # compartmentId dynamic dropdown, targetCompartment present in input variables
   targetCompartment:
