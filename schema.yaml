@@ -61,8 +61,12 @@ variableGroups:
   - title: "Restore from Backup"
     variables: 
       - ${notImplementedYet}
-
-
+  - title: "Lets Encrypt"
+    variables:
+      - ${letsEncryptContactEmail}
+  - title: "Advanced - Leave these alone unless you know what you are doing!"
+    variables: 
+      - ${notImplementedYet}
 
 	variables:
     # compartmentId dynamic dropdown, targetCompartment present in input variables
