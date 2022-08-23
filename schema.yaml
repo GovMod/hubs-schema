@@ -125,13 +125,13 @@ variableGroups:
 
   appServerInstanceType:
     type: string
-    title: Application Server Instance Type
-    description: "The Oracle compute shape type for your app server(s). Choose a "t" instance type if you expect bursty use of the service, and the "c" types if you expect steady usage.""
+    title: "Application Server Instance Type"
+    description: "The Oracle compute shape type for your app server(s). Choose a (t) instance type if you expect bursty use of the service, and the (c) types if you expect steady usage."
 
   streamingServerInstanceType:
     type: string
-    title: Streaming Server Instance Type
-    description: "The Oracle Shape type for your streaming server(s), if you've added any. This field will not be used if you entered zero for the number of streaming servers. Choose a "t" instance type if you expect bursty use of the service, and the "c" types if you expect steady usage.""
+    title: "Streaming Server Instance Type"
+    description: "The Oracle Shape type for your streaming server(s), if you have added any. This field will not be used if you entered zero for the number of streaming servers. Choose a (t) instance type if you expect bursty use of the service, and the (c) types if you expect steady usage."
 
 
 # Used to present outputs with more refinement on the Application Information tab.
