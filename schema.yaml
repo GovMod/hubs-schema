@@ -23,11 +23,16 @@ source:
 locale: "en"
 variableGroups:
   - title: "Hubs Deployment Parameters"
+    variables: 
+      - targetCompartment
   - title: "Application Details"
     variables:
       - ${adminEmail}
 
 	variables:
+    # compartmentId dynamic dropdown, targetCompartment present in input variables
+  targetCompartment:
+    type: oci:identity:compartment:id
 
   adminEmail:
     type: string
