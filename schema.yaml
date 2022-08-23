@@ -60,9 +60,9 @@ variableGroups:
       - ${dbAutoScale}
   - title: "Restore from Backup"
       - ${notImplementedYet}
-  - title: "Let's Encrypt"
+  - title: "Lets Encrypt"
       - ${letsEncryptContactEmail}
-  - title: "Advanced - Leave these alone unless you know what you're doing!"
+  - title: "Advanced - Leave these alone unless you know what you are doing!"
       - ${notImplementedYet}
 
 	variables:
