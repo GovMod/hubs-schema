@@ -160,6 +160,9 @@ variableGroups:
     type: oci:core:instanceshape:name
     title: "Application Server Instance Type"
     description: "The Oracle compute shape type for your app server(s). Choose a (t) instance type if you expect bursty use of the service, and the (c) types if you expect steady usage."
+    dependsOn:
+      compartmentId: compartment_ocid
+
 
   streamingServerInstanceType:
     type: oci:core:instanceshape:name
