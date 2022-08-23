@@ -162,6 +162,7 @@ variableGroups:
     description: "The Oracle compute shape type for your app server(s). Choose a (t) instance type if you expect bursty use of the service, and the (c) types if you expect steady usage."
     dependsOn:
       compartmentId: compartment_ocid
+    default: "VM.Standard.E2.4"
 
 
   streamingServerInstanceType:
