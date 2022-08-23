@@ -82,13 +82,13 @@ variableGroups:
   outgoingEmailDomain:
     type: string
     title: "Outgoing email domain"
-    description: "To verify email addresses, your hub needs to be able to send email. If you do not have an existing email SMTP provider, choose a Route 53 domain you'd like to send email from. It will be set up automatically using Oracle Email Service. If you have an existing email provider you'd like to send email from (eg Mailchimp) or already have a verified domain in Oracle Email Service select the same zone you chose above for 'Internal Oracle DNS Zone' and you'll be able to enter the login credentials from your email provider later."
+    description: "To verify email addresses, your hub needs to be able to send email. If you do not have an existing email SMTP provider, choose a Route 53 domain you'd like to send email from. It will be set up automatically using Oracle Email Service. If you have an existing email provider you'd like to send email from (eg Mailchimp) or already have a verified domain in Oracle Email Service select the same zone you chose above for Internal Oracle DNS Zone and you will be able to enter the login credentials from your email provider later."
     required: false
 
   outgoingEmailSubdomainPrefix:
     type: string
     title: "Outgoing email subdomain"
-    description: "The Subdomain prefix to use for outgoing emails. For example, if your Outgoing Email Route 53 Zone is set to myhub.com, setting this field to "mail" will send email from the domain mail.myhub.com. If you have a third party email provider (eg Mailchimp) you can ignore this field."
+    description: "The Subdomain prefix to use for outgoing emails. For example, if your Outgoing Email Route 53 Zone is set to myhub.com, setting this field to (mail) will send email from the domain mail.myhub.com. If you have a third party email provider (eg Mailchimp) you can ignore this field."
     required: false
 
   
