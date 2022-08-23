@@ -45,6 +45,14 @@ variableGroups:
       - ${numberOfStreamingServers}
       - ${appServerInstanceType}
       - ${streamingServerInstanceType}
+  - title: "Cost Management"
+    variables:
+      - ${dbBudget}
+      - ${storageLimit}
+  - title: "Offline Mode"
+    variables:
+      - ${stackMode}
+      - ${offlineRedirectURL}      
 
 
 	variables:
@@ -133,6 +141,25 @@ variableGroups:
     title: "Streaming Server Instance Type"
     description: "The Oracle Shape type for your streaming server(s), if you have added any. This field will not be used if you entered zero for the number of streaming servers. Choose a (t) instance type if you expect bursty use of the service, and the (c) types if you expect steady usage."
 
+  dbBudget:
+    type: interger
+    title: 
+    description: 
+
+  storageLimit:
+    type: interger
+    title: 
+    description: 
+
+  stackMode:
+    type: interger
+    title: 
+    description: 
+
+  offlineRedirectURL:
+    type: string
+    title: 
+    description: 
 
 # Used to present outputs with more refinement on the Application Information tab.
 # The Application Information tab is only shown if the schema has a "title",
