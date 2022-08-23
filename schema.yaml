@@ -30,7 +30,7 @@ variableGroups:
 	variables:
 
   adminEmail:
-    type: email
+    type: string
     title: "Administration Email Address"
     description: "Email address for you administration account.  Individuals with access to this email address will have full administrative control of your hub.  Before you can log in, you will need to verify this email address - you will get a verification email from Oracle after the stack is ready." 
     required: true
