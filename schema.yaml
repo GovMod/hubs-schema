@@ -73,6 +73,12 @@ variableGroups:
       - ${iamRole}
 
 	variables:
+  compartment_ocid:
+    type: oci:identity:compartment:id
+    title: "Compartment"
+    description: "The compartment in which to create compute instance(s)"
+    required: true
+    
     # compartmentId dynamic dropdown, targetCompartment present in input variables
   targetCompartment:
     type: oci:identity:compartment:id
@@ -159,6 +165,9 @@ variableGroups:
     type: oci:core:instanceshape:name
     title: "Streaming Server Instance Type"
     description: "The Oracle Shape type for your streaming server(s), if you have added any. This field will not be used if you entered zero for the number of streaming servers. Choose a (t) instance type if you expect bursty use of the service, and the (c) types if you expect steady usage."
+    dependsOn:
+      compartmentId: compartment_ocid
+
 
   dbBudget:
     type: interger
