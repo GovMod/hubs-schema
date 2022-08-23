@@ -40,10 +40,13 @@ variableGroups:
       - ${outgoingEmailSubdomainPrefix}
   - title: "Server Configuration"
     variables:
-      - ${outgoingEmailDomain}
-      - ${outgoingEmailSubdomainPrefix}
+      - ${keyPair}
+      - ${numberOfAppServers}
+      - ${numberOfStreamingServers}
+      - ${appServerInstanceType}
+      - ${streamingServerInstanceType}
 
-      
+
 	variables:
     # compartmentId dynamic dropdown, targetCompartment present in input variables
   targetCompartment:
@@ -92,7 +95,7 @@ variableGroups:
   outgoingEmailSubdomainPrefix:
     type: string
     title: "Outgoing email subdomain"
-    description: "The Subdomain prefix to use for outgoing emails. For example, if your Outgoing Email Route 53 Zone is set to myhub.com, setting this field to (mail) will send email from the domain mail.myhub.com. If you have a third party email provider (eg Mailchimp) you can ignore this field."
+    description: "The Subdomain prefix to use for outgoing emails. For example, if your Outgoing Email Oracle Zone is set to myhub.com, setting this field to (mail) will send email from the domain mail.myhub.com. If you have a third party email provider (eg Mailchimp) you can ignore this field."
     required: false
   
   restrictSiteAccess:
@@ -100,6 +103,10 @@ variableGroups:
     title: "Restrict Site Access"
     description: "You can restrict which IP addresses can access your site. To allow anyone on the Internet to load your site, choose (Allow anyone to access my site)"
 
+  keyPair:
+    type: file
+    title: "key"
+    description: "get pub file"
 
 
 # Used to present outputs with more refinement on the Application Information tab.
