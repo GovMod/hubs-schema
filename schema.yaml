@@ -38,6 +38,15 @@ variableGroups:
     variables:
       - ${outgoingEmailDomain}
       - ${outgoingEmailSubdomainPrefix}
+  - title: "Server Configuration"
+    variables:
+      - ${restrictSiteAccess}
+      - ${keyPair}
+      - ${numberOfAppServers}
+      - ${numberOfStreamingServers}
+      - ${appServerInstanceType}
+      - ${streamingServerInstanceType}
+
 
 
 
@@ -97,7 +106,25 @@ variableGroups:
     title: "Restrict Site Access"
     description: "You can restrict which IP addresses can access your site. To allow anyone on the Internet to load your site, choose (Allow anyone to access my site)"
 
-  
+  restrictSiteAccess:
+    type: boolean
+
+  keyPair: 
+    type: file
+
+  numberOfAppServers:
+    type: number
+
+  numberOfStreamingServers:
+    type: number
+
+  appServerInstanceType:
+    type: array
+    default: "BigServer"
+
+  streamingServerInstanceType:
+      type: array
+      default: "BigServer"
 
 # Used to present outputs with more refinement on the Application Information tab.
 # The Application Information tab is only shown if the schema has a "title",
