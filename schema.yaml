@@ -61,7 +61,7 @@ variableGroups:
   - title: "Restore from Backup"
     variables: 
       - ${notImplementedYet}
-  - title: "Lets Encrypt"
+  - title: "Let's Encrypt"
     variables:
       - ${letsEncryptContactEmail}
   - title: "Advanced - Leave these alone unless you know what you are doing!"
