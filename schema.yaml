@@ -23,33 +23,17 @@ source:
 locale: "en"
 variableGroups:
   - title: "Hubs Deployment Parameters"
-    variables:
-      - targetCompartment
-      - ${nodeCount}
-      - ${nodeShapes}
-      - ${availability}
   - title: "Application Details"
     variables:
       - ${adminEmail}
-      - ${password}
-      - ${dnsServers}
 
 	variables:
 
   adminEmail:
     type: email
     title: "Administration Email Address"
-    descriptin: "Email address for you administration account." 
+    description: "Email address for you administration account.  Individuals with access to this email address will have full administrative control of your hub.  Before you can log in, you will need to verify this email address - you will get a verification email from Oracle after the stack is ready." 
     required: true
-
-
-  myNsg:
-    type: oci:core:nsg:id
-    title: "Network Security Group"
-    description: "Network Security Group description"
-    dependsOn:
-      compartmentId: ${vcnCompartment}
-
 
 # Used to present outputs with more refinement on the Application Information tab.
 # The Application Information tab is only shown if the schema has a "title",
