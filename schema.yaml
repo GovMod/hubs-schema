@@ -2,8 +2,8 @@
 title: Mozilla Hubs Oracle Cloud Launcher
 # Sub Title shown in Application Information tab.
 name: Deploy-Hubs
-description: Hubs Cloud Enterprise server infrastructure for scalable, private, collaborative immersive rooms that can be accessed on your desktop, mobile phone, or VR headset.
-informationalText: Create Mozilla Hubs Environment
+description: Create and launch Hubs environments on Oracle Cloud
+informationalText: Hubs Cloud Enterprise server infrastructure for scalable, private, collaborative immersive rooms that can be accessed on your desktop, mobile phone, or VR headset.
 schemaVersion: 1.1.0
 version: "20190304"
 
