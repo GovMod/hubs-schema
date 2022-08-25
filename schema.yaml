@@ -2,7 +2,7 @@
 title: Mozilla Hubs Oracle Cloud Launcher
 # Sub Title shown in Application Information tab.
 name: Deploy-Hubs
-description: Create and launch Hubs environments on Oracle Cloud
+description: Hubs Cloud Enterprise server infrastructure for scalable, private, collaborative immersive rooms that can be accessed on your desktop, mobile phone, or VR headset.
 informationalText: Create Mozilla Hubs Environment
 schemaVersion: 1.1.0
 version: "20190304"
@@ -171,6 +171,7 @@ variableGroups:
     description: "The Oracle Shape type for your streaming server(s), if you have added any. This field will not be used if you entered zero for the number of streaming servers. Choose a (t) instance type if you expect bursty use of the service, and the (c) types if you expect steady usage."
     dependsOn:
       compartmentId: compartment_ocid
+    default: "VM.Standard.E2.4"
 
 
   dbBudget:
